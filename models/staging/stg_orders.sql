@@ -1,4 +1,9 @@
- with orders as (
+{{ config (
+    materialized="ephemeral"
+)}}
+
+
+with orders as (
     
     select
         id as order_id,

@@ -1,4 +1,4 @@
-  with customers as (
+ with customers as (
 
     select * from {{ ref('stg_customers')}}
 
@@ -25,7 +25,6 @@ customer_orders as (
 
 ),
 
-
 final as (
 
     select
@@ -42,4 +41,4 @@ final as (
 
 )
 
-select * from final
+select * from final  
